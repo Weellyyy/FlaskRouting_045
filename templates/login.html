@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
+   <!-- Elemen root HTML -->
    <head>
       <title>Login Page</title>
-      <!-- Link ke styles.css -->
+      <!-- Menentukan judul halaman yang akan tampil di tab browser -->
+
+      <!-- Menghubungkan file CSS eksternal dari folder static -->
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
    </head>
    <body>
+      <!-- Judul form login -->
       <h2>Login Form</h2>
+
+      <!-- Form untuk mengirimkan data login -->
       <form action="http://localhost:5000/login" method="post">
+         <!-- Aksi form diarahkan ke endpoint /login menggunakan metode POST -->
+
+         <!-- Input untuk memasukkan nama -->
          <p>Enter Name:</p>
          <p><input type="text" name="nm" /></p>
+
+         <!-- Tombol untuk mengirimkan data -->
          <p><input type="submit" value="submit" /></p>
       </form>   
    </body>
